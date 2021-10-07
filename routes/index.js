@@ -29,6 +29,9 @@ router.get('/shopping-cart', function (req, res, next) {
 router.get('/checkout', function (req, res, next) {
 	res.render('check-out', { title: 'Express' });
 });
+router.get('/fillbox', function (req, res, next) {
+	res.render('fillbox', { title: 'Express' });
+});
 
 router.post('/contactus', async (req, res, next) => {
 	console.log('route called');

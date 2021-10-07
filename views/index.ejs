@@ -19,75 +19,15 @@
 		<!-- Header End -->
 
 		<!-- Hero Section Begin -->
-		<section class="hero-section">
-			<div class="hero-items owl-carousel">
-				<div class="single-hero-items set-bg" data-setbg="img/ref/c1.jpg">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-5">
-								<span>Bag,kids</span>
-								<h1>Black friday</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-									do eiusmod tempor incididunt ut labore et dolore
-								</p>
-								<a href="#" class="primary-btn">Shop Now</a>
-							</div>
-						</div>
-						<div class="off-card">
-							<h2>Sale <span>50%</span></h2>
-						</div>
-					</div>
-				</div>
-				<div class="single-hero-items set-bg" data-setbg="img/ref/c2.jpg">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-5">
-								<span>Bag,kids</span>
-								<h1>Black friday</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-									do eiusmod tempor incididunt ut labore et dolore
-								</p>
-								<a href="#" class="primary-btn">Shop Now</a>
-							</div>
-						</div>
-						<div class="off-card">
-							<h2>Sale <span>50%</span></h2>
-						</div>
-					</div>
-				</div>
-				<div class="single-hero-items set-bg" data-setbg="img/ref/c3.jpg">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-5">
-								<span>Bag,kids</span>
-								<h1>Black friday</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-									do eiusmod tempor incididunt ut labore et dolore
-								</p>
-								<a href="#" class="primary-btn">Shop Now</a>
-							</div>
-						</div>
-						<div class="off-card">
-							<h2>Sale <span>50%</span></h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<%- include('partials/hero.ejs') %>
 		<!-- Hero Section End -->
-		
+
 		<!--new arrival -->
 		<section class="women-banner spad">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-3">
-						<div
-							class="product-large set-bg"
-							data-setbg="img/ref/c4.jpg"
-						>
+						<div class="product-large set-bg" data-setbg="img/ref/c4.jpg">
 							<h2>NEW ARRIVAL</h2>
 							<a href="#">Discover More</a>
 						</div>
@@ -212,36 +152,37 @@
 		<div class="banner-section spad">
 			<div class="container-fluid">
 				<div class="row">
-					<div id="shopify-section-1581395502466" class="shopify-section"><div data-section-id="1581395502466" data-section-type="section-info-v1" style=" ">
-						<div class="section-info-v1">
-						  <div class="container container-v2">
-							<div class="text-center">
-								  
-							  
-							  
-								
-								<div class="title-info text-center">
-								  <h2 class="title_heading mb-0" style="">SWEETNESS FOR SPECIAL DAYS<br>GET YOUR OWN SLICE OF HEAVEN</h2>
+					<div
+						id="shopify-section-1581395502466"
+						class="shopify-section col-lg-12"
+					>
+						<div
+							data-section-id="1581395502466"
+							data-section-type="section-info-v1"
+							style=""
+						>
+							<div class="section-info-v1">
+								<div class="container container-v2">
+									<div class="text-center mb-2">
+										<div class="title-info text-center">
+											<h2 class="title_heading mb-0">
+												SWEETNESS FOR SPECIAL DAYS<br />GET YOUR OWN SLICE OF
+												HEAVEN
+											</h2>
+										</div>
+									</div>
+									<p class="content_info text-center mb-2">
+										Sometimes that after dinner coffee just needs an
+										accompaniment, and what could be a more perfect finish to a
+										meal than these chocolatey treats with almonds and that hint
+										of anise? Biscotti comes from the Latin biscoctus, meaning
+										twice baked or cooked.
+									</p>
 								</div>
-								
-							  
 							</div>
-							
-							<p class="content_info" style="">Sometimes that after dinner coffee just needs an accompaniment, and what could be a more perfect finish to a meal than these chocolatey treats with almonds and that hint of anise? Biscotti comes from the Latin biscoctus, meaning twice baked or cooked.</p>
-							
-					  
-							
-					  
-					  
-						  </div>
 						</div>
-					  </div>
-					  
-					  
-					  
-					  
-					  </div>
-					<div class="col-lg-4">
+					</div>
+					<div class="col-lg-3">
 						<div class="single-banner">
 							<img src="img/ref/C12.jpg" alt="" />
 							<div class="inner-text">
@@ -249,7 +190,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-3">
 						<div class="single-banner">
 							<img src="img/ref/C11.jpg" alt="" />
 							<div class="inner-text">
@@ -257,11 +198,19 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-3">
 						<div class="single-banner">
 							<img src="img/ref/c13.jpg" alt="" />
 							<div class="inner-text">
 								<h4>FLOWERS</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="single-banner">
+							<img src="img/ref/c13.jpg" alt="" />
+							<div class="inner-text">
+								<h4>GIFT BOX</h4>
 							</div>
 						</div>
 					</div>
@@ -279,183 +228,295 @@
 								<li>WHITE CHOCOLATE</li>
 							</ul>
 						</div>
-						<div class="product-slider owl-carousel owl-loaded owl-drag">	
-						<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1306px, 0px, 0px); transition: all 1.2s ease 0s; width: 2612px;"><div class="owl-item cloned" style="width: 301.5px; margin-right: 25px;"><div class="product-item">
-								<div class="pi-pic">
-									<img src="img/ref/c15.jpg" alt="">
-									<div class="icon">
-										<i class="icon_heart_alt"></i>
+						<div class="product-slider owl-carousel owl-loaded owl-drag">
+							<div class="owl-stage-outer">
+								<div
+									class="owl-stage"
+									style="
+										transform: translate3d(-1306px, 0px, 0px);
+										transition: all 1.2s ease 0s;
+										width: 2612px;
+									"
+								>
+									<div
+										class="owl-item cloned"
+										style="width: 301.5px; margin-right: 25px"
+									>
+										<div class="product-item">
+											<div class="pi-pic">
+												<img src="img/ref/c15.jpg" alt="" />
+												<div class="icon">
+													<i class="icon_heart_alt"></i>
+												</div>
+												<ul>
+													<li class="w-icon active">
+														<a href="#"><i class="icon_bag_alt"></i></a>
+													</li>
+													<li class="quick-view">
+														<a href="#">+ Quick View</a>
+													</li>
+													<li class="w-icon">
+														<a href="#"><i class="fa fa-random"></i></a>
+													</li>
+												</ul>
+											</div>
+											<div class="pi-text">
+												<div class="catagory-name">Towel</div>
+												<a href="#">
+													<h5>Pure Pineapple</h5>
+												</a>
+												<div class="product-price">$34.00</div>
+											</div>
+										</div>
 									</div>
-									<ul>
-										<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-										<li class="quick-view"><a href="#">+ Quick View</a></li>
-										<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-									</ul>
-								</div>
-								<div class="pi-text">
-									<div class="catagory-name">Towel</div>
-									<a href="#">
-										<h5>Pure Pineapple</h5>
-									</a>
-									<div class="product-price">
-										$34.00
+									<div
+										class="owl-item cloned"
+										style="width: 301.5px; margin-right: 25px"
+									>
+										<div class="product-item">
+											<div class="pi-pic">
+												<img src="img/ref/c16.jpg" alt="" />
+												<div class="icon">
+													<i class="icon_heart_alt"></i>
+												</div>
+												<ul>
+													<li class="w-icon active">
+														<a href="#"><i class="icon_bag_alt"></i></a>
+													</li>
+													<li class="quick-view">
+														<a href="#">+ Quick View</a>
+													</li>
+													<li class="w-icon">
+														<a href="#"><i class="fa fa-random"></i></a>
+													</li>
+												</ul>
+											</div>
+											<div class="pi-text">
+												<div class="catagory-name">Towel</div>
+												<a href="#">
+													<h5>Converse Shoes</h5>
+												</a>
+												<div class="product-price">$34.00</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="owl-item"
+										style="width: 301.5px; margin-right: 25px"
+									>
+										<div class="product-item">
+											<div class="pi-pic">
+												<img src="img/ref/c17.jpg" alt="" />
+												<div class="sale">Sale</div>
+												<div class="icon">
+													<i class="icon_heart_alt"></i>
+												</div>
+												<ul>
+													<li class="w-icon active">
+														<a href="#"><i class="icon_bag_alt"></i></a>
+													</li>
+													<li class="quick-view">
+														<a href="#">+ Quick View</a>
+													</li>
+													<li class="w-icon">
+														<a href="#"><i class="fa fa-random"></i></a>
+													</li>
+												</ul>
+											</div>
+											<div class="pi-text">
+												<div class="catagory-name">Coat</div>
+												<a href="#">
+													<h5>Pure Pineapple</h5>
+												</a>
+												<div class="product-price">
+													$14.00
+													<span>$35.00</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="owl-item"
+										style="width: 301.5px; margin-right: 25px"
+									>
+										<div class="product-item">
+											<div class="pi-pic">
+												<img src="img/ref/c18.jpg" alt="" />
+												<div class="icon">
+													<i class="icon_heart_alt"></i>
+												</div>
+												<ul>
+													<li class="w-icon active">
+														<a href="#"><i class="icon_bag_alt"></i></a>
+													</li>
+													<li class="quick-view">
+														<a href="#">+ Quick View</a>
+													</li>
+													<li class="w-icon">
+														<a href="#"><i class="fa fa-random"></i></a>
+													</li>
+												</ul>
+											</div>
+											<div class="pi-text">
+												<div class="catagory-name">Shoes</div>
+												<a href="#">
+													<h5>Guangzhou sweater</h5>
+												</a>
+												<div class="product-price">$13.00</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="owl-item active"
+										style="width: 301.5px; margin-right: 25px"
+									>
+										<div class="product-item">
+											<div class="pi-pic">
+												<img src="img/ref/c19.jpg" alt="" />
+												<div class="icon">
+													<i class="icon_heart_alt"></i>
+												</div>
+												<ul>
+													<li class="w-icon active">
+														<a href="#"><i class="icon_bag_alt"></i></a>
+													</li>
+													<li class="quick-view">
+														<a href="#">+ Quick View</a>
+													</li>
+													<li class="w-icon">
+														<a href="#"><i class="fa fa-random"></i></a>
+													</li>
+												</ul>
+											</div>
+											<div class="pi-text">
+												<div class="catagory-name">Towel</div>
+												<a href="#">
+													<h5>Pure Pineapple</h5>
+												</a>
+												<div class="product-price">$34.00</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="owl-item active"
+										style="width: 301.5px; margin-right: 25px"
+									>
+										<div class="product-item">
+											<div class="pi-pic">
+												<img src="img/ref/c17.jpg" alt="" />
+												<div class="icon">
+													<i class="icon_heart_alt"></i>
+												</div>
+												<ul>
+													<li class="w-icon active">
+														<a href="#"><i class="icon_bag_alt"></i></a>
+													</li>
+													<li class="quick-view">
+														<a href="#">+ Quick View</a>
+													</li>
+													<li class="w-icon">
+														<a href="#"><i class="fa fa-random"></i></a>
+													</li>
+												</ul>
+											</div>
+											<div class="pi-text">
+												<div class="catagory-name">Towel</div>
+												<a href="#">
+													<h5>Converse Shoes</h5>
+												</a>
+												<div class="product-price">$34.00</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="owl-item cloned"
+										style="width: 301.5px; margin-right: 25px"
+									>
+										<div class="product-item">
+											<div class="pi-pic">
+												<img src="img/ref/c18.jpg" alt="" />
+												<div class="sale">Sale</div>
+												<div class="icon">
+													<i class="icon_heart_alt"></i>
+												</div>
+												<ul>
+													<li class="w-icon active">
+														<a href="#"><i class="icon_bag_alt"></i></a>
+													</li>
+													<li class="quick-view">
+														<a href="#">+ Quick View</a>
+													</li>
+													<li class="w-icon">
+														<a href="#"><i class="fa fa-random"></i></a>
+													</li>
+												</ul>
+											</div>
+											<div class="pi-text">
+												<div class="catagory-name">Coat</div>
+												<a href="#">
+													<h5>Pure Pineapple</h5>
+												</a>
+												<div class="product-price">
+													$14.00
+													<span>$35.00</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="owl-item cloned"
+										style="width: 301.5px; margin-right: 25px"
+									>
+										<div class="product-item">
+											<div class="pi-pic">
+												<img src="img/ref/c19.jpg" alt="" />
+												<div class="icon">
+													<i class="icon_heart_alt"></i>
+												</div>
+												<ul>
+													<li class="w-icon active">
+														<a href="#"><i class="icon_bag_alt"></i></a>
+													</li>
+													<li class="quick-view">
+														<a href="#">+ Quick View</a>
+													</li>
+													<li class="w-icon">
+														<a href="#"><i class="fa fa-random"></i></a>
+													</li>
+												</ul>
+											</div>
+											<div class="pi-text">
+												<div class="catagory-name">Shoes</div>
+												<a href="#">
+													<h5>Guangzhou sweater</h5>
+												</a>
+												<div class="product-price">$13.00</div>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div></div><div class="owl-item cloned" style="width: 301.5px; margin-right: 25px;"><div class="product-item">
-								<div class="pi-pic">
-									<img src="img/ref/c16.jpg" alt="">
-									<div class="icon">
-										<i class="icon_heart_alt"></i>
-									</div>
-									<ul>
-										<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-										<li class="quick-view"><a href="#">+ Quick View</a></li>
-										<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-									</ul>
-								</div>
-								<div class="pi-text">
-									<div class="catagory-name">Towel</div>
-									<a href="#">
-										<h5>Converse Shoes</h5>
-									</a>
-									<div class="product-price">
-										$34.00
-									</div>
-								</div>
-							</div></div><div class="owl-item" style="width: 301.5px; margin-right: 25px;"><div class="product-item">
-								<div class="pi-pic">
-									<img src="img/ref/c17.jpg" alt="">
-									<div class="sale">Sale</div>
-									<div class="icon">
-										<i class="icon_heart_alt"></i>
-									</div>
-									<ul>
-										<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-										<li class="quick-view"><a href="#">+ Quick View</a></li>
-										<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-									</ul>
-								</div>
-								<div class="pi-text">
-									<div class="catagory-name">Coat</div>
-									<a href="#">
-										<h5>Pure Pineapple</h5>
-									</a>
-									<div class="product-price">
-										$14.00
-										<span>$35.00</span>
-									</div>
-								</div>
-							</div></div><div class="owl-item" style="width: 301.5px; margin-right: 25px;"><div class="product-item">
-								<div class="pi-pic">
-									<img src="img/ref/c18.jpg" alt="">
-									<div class="icon">
-										<i class="icon_heart_alt"></i>
-									</div>
-									<ul>
-										<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-										<li class="quick-view"><a href="#">+ Quick View</a></li>
-										<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-									</ul>
-								</div>
-								<div class="pi-text">
-									<div class="catagory-name">Shoes</div>
-									<a href="#">
-										<h5>Guangzhou sweater</h5>
-									</a>
-									<div class="product-price">
-										$13.00
-									</div>
-								</div>
-							</div></div><div class="owl-item active" style="width: 301.5px; margin-right: 25px;"><div class="product-item">
-								<div class="pi-pic">
-									<img src="img/ref/c19.jpg" alt="">
-									<div class="icon">
-										<i class="icon_heart_alt"></i>
-									</div>
-									<ul>
-										<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-										<li class="quick-view"><a href="#">+ Quick View</a></li>
-										<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-									</ul>
-								</div>
-								<div class="pi-text">
-									<div class="catagory-name">Towel</div>
-									<a href="#">
-										<h5>Pure Pineapple</h5>
-									</a>
-									<div class="product-price">
-										$34.00
-									</div>
-								</div>
-							</div></div><div class="owl-item active" style="width: 301.5px; margin-right: 25px;"><div class="product-item">
-								<div class="pi-pic">
-									<img src="img/ref/c17.jpg" alt="">
-									<div class="icon">
-										<i class="icon_heart_alt"></i>
-									</div>
-									<ul>
-										<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-										<li class="quick-view"><a href="#">+ Quick View</a></li>
-										<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-									</ul>
-								</div>
-								<div class="pi-text">
-									<div class="catagory-name">Towel</div>
-									<a href="#">
-										<h5>Converse Shoes</h5>
-									</a>
-									<div class="product-price">
-										$34.00
-									</div>
-								</div>
-							</div></div><div class="owl-item cloned" style="width: 301.5px; margin-right: 25px;"><div class="product-item">
-								<div class="pi-pic">
-									<img src="img/ref/c18.jpg" alt="">
-									<div class="sale">Sale</div>
-									<div class="icon">
-										<i class="icon_heart_alt"></i>
-									</div>
-									<ul>
-										<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-										<li class="quick-view"><a href="#">+ Quick View</a></li>
-										<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-									</ul>
-								</div>
-								<div class="pi-text">
-									<div class="catagory-name">Coat</div>
-									<a href="#">
-										<h5>Pure Pineapple</h5>
-									</a>
-									<div class="product-price">
-										$14.00
-										<span>$35.00</span>
-									</div>
-								</div>
-							</div></div><div class="owl-item cloned" style="width: 301.5px; margin-right: 25px;"><div class="product-item">
-								<div class="pi-pic">
-									<img src="img/ref/c19.jpg" alt="">
-									<div class="icon">
-										<i class="icon_heart_alt"></i>
-									</div>
-									<ul>
-										<li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-										<li class="quick-view"><a href="#">+ Quick View</a></li>
-										<li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-									</ul>
-								</div>
-								<div class="pi-text">
-									<div class="catagory-name">Shoes</div>
-									<a href="#">
-										<h5>Guangzhou sweater</h5>
-									</a>
-									<div class="product-price">
-										$13.00
-									</div>
-								</div>
-							</div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="ti-angle-left"></i></button><button type="button" role="presentation" class="owl-next"><i class="ti-angle-right"></i></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div></div>
+							</div>
+							<div class="owl-nav">
+								<button type="button" role="presentation" class="owl-prev">
+									<i class="ti-angle-left"></i></button
+								><button type="button" role="presentation" class="owl-next">
+									<i class="ti-angle-right"></i>
+								</button>
+							</div>
+							<div class="owl-dots">
+								<button role="button" class="owl-dot"><span></span></button
+								><button role="button" class="owl-dot active">
+									<span></span>
+								</button>
+							</div>
+						</div>
 					</div>
 					<div class="col-lg-3 offset-lg-1">
-						<div class="product-large set-bg m-large" data-setbg="img/ref/c14.png" style="background-image: url(&quot;img/ref/c14.png&quot;);">
+						<div
+							class="product-large set-bg m-large"
+							data-setbg="img/ref/c14.png"
+							style="background-image: url('img/ref/c14.png')"
+						>
 							<h2>Fill your box</h2>
 							<a href="#">GET YOUR OWN SLICE OF YOUR HEAVEN</a>
 						</div>
@@ -464,7 +525,7 @@
 			</div>
 		</section>
 		<!-- Deal Of The Week Section Begin-->
-		<section class="deal-of-week set-bg spad" data-setbg="img/time-bg.jpg">
+		<!-- <section class="deal-of-week set-bg spad" data-setbg="img/time-bg.jpg">
 			<div class="container">
 				<div class="col-lg-6 text-center">
 					<div class="section-title">
@@ -499,7 +560,7 @@
 					<a href="#" class="primary-btn">Shop Now</a>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- Deal Of The Week Section End -->
 
 		<!-- Instagram Section Begin -->

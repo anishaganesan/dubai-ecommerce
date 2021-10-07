@@ -1,0 +1,4888 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<%- include('partials/header.ejs') %>
+	</head>
+
+	<body>
+		<!-- Page Preloder -->
+		<div id="preloder">
+			<div class="loader"></div>
+		</div>
+
+		<!-- Header Section Begin -->
+		<header class="header-section">
+			<header class="header-section">
+				<%- include('partials/topbar.ejs') %> <%-
+				include('partials/inner-header.ejs') %> <%-
+				include('partials/navbar.ejs') %>
+			</header>
+		</header>
+		<!-- Header End -->
+
+		<!-- Breadcrumb Section Begin -->
+		<div class="breacrumb-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="breadcrumb-text">
+							<a href="#"><i class="fa fa-home"></i> Home</a>
+							<span>Fill Box</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Breadcrumb Section Begin -->
+
+		<!-- Product Shop Section Begin -->
+		<div class="container">
+			<div class="mt-5">
+				<h6 class="text-center">
+					Order your personalized chocolate gift box online, delivery across
+					Lebanon
+				</h2>
+			</div>
+			<h2>Create your box</h2>
+			<p class="mt-2">
+				Create your very own chocolate box, customized to your taste with your
+				favorite premium chocolates!
+			</p>
+
+
+            <div class="row" id='fill-box'>
+                <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://patchi.com/5612-home_default/Array.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Box of 500 Grs</h5>
+                      <p class="card-text">LBP 310,000</p>
+                      <a href="/select" class="btn btn-primary">Select</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://patchi.com/5612-home_default/Array.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Box of 500 Grs</h5>
+                      <p class="card-text">LBP 310,000</p>
+                      <a href="/select" class="btn btn-primary">Select</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://patchi.com/5612-home_default/Array.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Box of 500 Grs</h5>
+                      <p class="card-text">LBP 310,000</p>
+                      <a href="/select" class="btn btn-primary">Select</a>
+                    </div>
+                  </div>
+                </div>
+            
+            </div>
+       
+         
+
+           </div>
+
+         
+     
+
+		<section id="wrapper">
+			<div class="container">
+				<div id="content-wrapper">
+					<section id="main">
+						<header class="page-header">
+							<h1 class="tt-innerpagetitle">
+								<span class="sitemap-title">Create your box</span>
+							</h1>
+						</header>
+
+						<script>
+							var whatissweeterTxt =
+								'What could be sweeter than a larger chocolate box?';
+							var upgradeTxt = 'Upgrade';
+							var deleteAllTxt = 'Are you sure you want to delete all items?';
+							var proceedTxt = 'Proceed';
+							var emptyTxt = 'Your box is empty!';
+							var reconfigureTxt = 'Kindly reconfigure your selection.';
+							var sureToDeleteTxt = 'Are you sure you want to delete item';
+							var picktillfullTxt =
+								'Pick And Mix Your Favorite Chocolates Until Your Box Is Full';
+							var redirectTxt =
+								'Please wait while you are redirected to the homepage.';
+
+							var baseBybUrl = 'https://patchi.com/';
+						</script>
+
+						<!-- <style>
+							.box__img {
+								position: absolute;
+								margin-top: 5px;
+							}
+
+							.box__link .box__img_top {
+								transition: all 0.3s ease;
+								opacity: 1;
+							}
+
+							.box__link .box__img_bottom {
+								transition: all 0.3s ease;
+								opacity: 0;
+							}
+
+							.box__link:hover .box__img_bottom {
+								opacity: 1;
+							}
+
+							.box__link:hover .box__img_top {
+								opacity: 0;
+							}
+
+							.image-hover-container {
+								position: relative;
+								min-height: 270px;
+							}
+						</style> -->
+
+						<script>
+							var editBoxId = 0;
+						</script>
+
+						<section>
+							<div class="buildyourbox">
+								<p class="buildyourbox__desc">
+									Create your very own chocolate box, customized to your taste
+									with your favorite premium chocolates!
+								</p>
+								<ul class="clear-style steps">
+									<li
+										class="step__item step__item--first active"
+										data-step="box"
+									>
+										<a href="#box" class="step__link">
+											<span class="step__number">1</span>
+											<span class="step__name">Choose Your Box weight</span>
+										</a>
+									</li>
+									<li class="step__item step__item--mid" data-step="chocolate">
+										<a href="#chocolate" class="step__link">
+											<span class="step__number">2</span>
+											<span class="step__name">Select Your Chocolate</span>
+										</a>
+									</li>
+									<li
+										class="step__item step__item--last"
+										data-step="confirmation"
+									>
+										<a href="#confirmation" class="step__link">
+											<span class="step__number">3</span>
+											<span class="step__name">Add to Cart</span>
+										</a>
+									</li>
+								</ul>
+								<div id="box" class="box__panel active">
+									<div class="box-row box-select-title">
+										<p class="tab__desc full">Choose Your Box weight</p>
+									</div>
+
+
+									<div class="btn-container center" style="display: none">
+										<button id="select_box" class="btn btn-primary">
+											Select Your Chocolate
+										</button>
+									</div>
+
+									<div id="box-edit" style="display: none">
+										Please wait while we load your box...
+									</div>
+								</div>
+								<div id="chocolate" class="box__panel">
+									<div class="box-row">
+										<p class="three-quarter tab__desc">
+											Great! Now choose your favourite chocolates and turn it
+											into the most delicious box. Our chocolates may contain
+											traces of nuts.
+										</p>
+										<div class="quarter btn-container text-right">
+											<button class="btn btn-secondary" id="byb_step-back">
+												Back
+											</button>
+											<button class="btn btn-primary" id="byb_add-to-cart">
+												Add to cart
+											</button>
+										</div>
+									</div>
+									<div class="row">
+										<aside class="col-md-4">
+											<div
+												class="filter"
+												id="byb-filter"
+												style="margin-top: 0px"
+											>
+												<div class="filter__current hidden">
+													<p class="filter__title">Filter</p>
+													<ul class="clear-style">
+														<li>
+															<span class="value"
+																>Dark Chocolate<span class="type-count"></span
+															></span>
+															<a
+																class="btn-remove"
+																title="Remove This Item"
+																href="javascript:void(0);"
+															></a>
+														</li>
+													</ul>
+												</div>
+												<div class="filter__by">
+													<p class="filter__title">Select Chocolate Types</p>
+												</div>
+												<ul class="filter__list" style="display: none">
+													<li class="filter__item primary_category">
+														<a href="#" class="filter__link" data-category="43"
+															>Dark</a
+														>
+													</li>
+													<li class="filter__item primary_category">
+														<a href="#" class="filter__link" data-category="44"
+															>Milk</a
+														>
+													</li>
+													<li class="filter__item primary_category">
+														<a href="#" class="filter__link" data-category="45"
+															>Nuts</a
+														>
+													</li>
+													<li class="filter__item primary_category">
+														<a href="#" class="filter__link" data-category="46"
+															>Fruit</a
+														>
+													</li>
+													<li class="filter__item primary_category">
+														<a href="#" class="filter__link" data-category="47"
+															>Praline</a
+														>
+													</li>
+													<li class="filter__item primary_category">
+														<a href="#" class="filter__link" data-category="48"
+															>Gianduja</a
+														>
+													</li>
+													<li class="filter__item primary_category">
+														<a href="#" class="filter__link" data-category="49"
+															>Biscuits</a
+														>
+													</li>
+													<li class="filter__item primary_category">
+														<a href="#" class="filter__link" data-category="50"
+															>Coffee</a
+														>
+													</li>
+													<li class="filter__item primary_category">
+														<a href="#" class="filter__link" data-category="51"
+															>Caramel</a
+														>
+													</li>
+													<li class="filter__item primary_category">
+														<a href="#" class="filter__link" data-category="65"
+															>No Added Sugar</a
+														>
+													</li>
+
+													<li class="filter__item secondary_category">
+														<a href="#" class="filter__link" data-category="184"
+															>Milk</a
+														>
+													</li>
+													<li class="filter__item secondary_category">
+														<a href="#" class="filter__link" data-category="185"
+															>Nuts</a
+														>
+													</li>
+													<li class="filter__item secondary_category">
+														<a href="#" class="filter__link" data-category="186"
+															>Fruit</a
+														>
+													</li>
+													<li class="filter__item secondary_category">
+														<a href="#" class="filter__link" data-category="188"
+															>Gianduja</a
+														>
+													</li>
+													<li class="filter__item secondary_category">
+														<a href="#" class="filter__link" data-category="189"
+															>Biscuits</a
+														>
+													</li>
+													<li class="filter__item secondary_category">
+														<a href="#" class="filter__link" data-category="190"
+															>Coffee</a
+														>
+													</li>
+													<li class="filter__item secondary_category">
+														<a href="#" class="filter__link" data-category="191"
+															>Caramel</a
+														>
+													</li>
+													<li class="filter__item secondary_category">
+														<a href="#" class="filter__link" data-category="192"
+															>No Added Sugar</a
+														>
+													</li>
+													<li class="filter__item secondary_category">
+														<a href="#" class="filter__link" data-category="187"
+															>Praline</a
+														>
+													</li>
+													<li class="filter__item secondary_category">
+														<a href="#" class="filter__link" data-category="183"
+															>Dark</a
+														>
+													</li>
+												</ul>
+
+												<div class="filter__container">
+													<p>
+														Please select the flavors and quantities you would
+														like until your box is full.
+													</p>
+													<div class="filter__count">
+														<span
+															id="progress-total-weight"
+															class="filter__total-weight pull-left"
+															data-remains="250"
+														>
+															<span>0.00</span> gr
+														</span>
+														<span
+															id="progress-box-weight"
+															class="filter__box-weight pull-right"
+															>250.00 gr</span
+														>
+														<div class="box__progress">
+															<div class="box__progress-bar"></div>
+															<span class="box__progress-value">0%</span>
+														</div>
+														<span id="progress-remaining-weight">
+															<span id="remaining-weight"
+																>Remaining Weight to Select:
+																<span>250.00 gr</span></span
+															>
+															<span
+																class="remaining-weight-full"
+																id="byb_upgrade-box"
+																style="cursor: pointer"
+															>
+																The box is Full. What would be sweeter than a
+																larger chocolate box?
+																<b>Click here to upgrade your box.</b>
+															</span>
+
+															<div class="byb__error byb__error--hidden">
+																<div>
+																	<span class="byb__error-weight"
+																		>Weight to be removed:
+																		<span>0.13 </span>gr.</span
+																	>
+																</div>
+																<div>
+																	<span class="byb__error-text"
+																		>Please remove items from your box or
+																		upgrade your box</span
+																	>
+																</div>
+															</div>
+														</span>
+													</div>
+												</div>
+												<div id="box_summary">
+													<div class="summary__container">
+														<div class="summary__title active">
+															What's inside the box
+														</div>
+														<ul
+															class="summary__list summary__list--empty"
+															style="display: none"
+														>
+															<li class="summary__item summary__item--empty">
+																<p class="summary__name">No items</p>
+															</li>
+														</ul>
+														<div class="summary__total">
+															Total:
+															<span class="summary__price"
+																>LBP <span>23</span></span
+															>
+														</div>
+													</div>
+													<div>
+														<form
+															action="https://patchi.com/cart"
+															method="post"
+															class="add-to-cart-or-refresh"
+															id="add-to-cart-or-refresh"
+														>
+															<div
+																class="product-quantity"
+																style="display: none"
+															>
+																<input
+																	type="number"
+																	name="id_product"
+																	value=""
+																	class="product_page_product_id"
+																	id="product_page_product_id"
+																/>
+																<input
+																	type="number"
+																	name="id_customization"
+																	value="0"
+																	class="product_customization_id"
+																	id="product_customization_id"
+																/>
+																<input
+																	type="hidden"
+																	name="token"
+																	value="6db373da34c319d7ca1bb4e05a6ea56e"
+																	class="byb-token"
+																/>
+																<div class="input-group bootstrap-touchspin">
+																	<span
+																		class="
+																			input-group-addon
+																			bootstrap-touchspin-prefix
+																		"
+																		style="display: none"
+																	></span
+																	><input
+																		type="number"
+																		name="qty"
+																		class="
+																			quantity_wanted
+																			input-group
+																			form-control
+																		"
+																		value="1"
+																		min="1"
+																		id="quantity_wanted"
+																		style="display: block"
+																	/><span
+																		class="
+																			input-group-addon
+																			bootstrap-touchspin-postfix
+																		"
+																		style="display: none"
+																	></span
+																	><span class="input-group-btn-vertical"
+																		><button
+																			class="
+																				btn btn-touchspin
+																				js-touchspin
+																				bootstrap-touchspin-up
+																			"
+																			type="button"
+																		>
+																			<i
+																				class="material-icons touchspin-up"
+																			></i></button
+																		><button
+																			class="
+																				btn btn-touchspin
+																				js-touchspin
+																				bootstrap-touchspin-down
+																			"
+																			type="button"
+																		>
+																			<i
+																				class="material-icons touchspin-down"
+																			></i></button
+																	></span>
+																</div>
+															</div>
+
+															<div class="btn-container">
+																<button
+																	class="
+																		btn btn-primary
+																		ajax_add_to_cart_button
+																		add-to-cart
+																	"
+																	id="byb_add-to-cart_default"
+																	data-button-action="add-to-cart"
+																	title="Add to cart"
+																	style="display: none"
+																>
+																	Add to cart
+																</button>
+																<button
+																	class="btn btn-primary"
+																	id="byb_add-to-cart"
+																	title="Add to cart"
+																>
+																	Add to cart
+																</button>
+																<button
+																	class="btn btn-primary"
+																	id="byb_clear-box"
+																	title="Clear Box"
+																>
+																	Clear Box
+																</button>
+																<button
+																	class="btn btn-primary"
+																	id="randomiseBox"
+																>
+																	Auto-Fill
+																</button>
+															</div>
+														</form>
+														<div
+															class="product-customization"
+															style="display: none"
+														>
+															<form
+																method="post"
+																action=""
+																enctype="multipart/form-data"
+															>
+																<textarea
+																	placeholder="Your message here"
+																	class="product-message"
+																	maxlength="250"
+																	name=""
+																></textarea>
+																<div class="product-message-cont"></div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</aside>
+										<main class="col-md-8">
+											<div class="box__selected-desc">
+												Your Selection:
+												<span class="box__selected-weight"></span> Box for: LBP
+												<span class="box__selected-price"></span>
+											</div>
+											
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-96"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1202-home_default/royal.jpg"
+																				alt="Royal"
+																				data-full-size-image-url="https://patchi.com/1202-large_default/royal.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Royal</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with gianduja cream and
+																				one whole hazelnut piece
+																			</p>
+																			<br /><br />
+																			<p>
+																				Chunky piece of smooth milk chocolate,
+																				gianduja and roasted hazelnut for a
+																				Royale experience.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-97"
+														data-category-all=" 42  44  45 "
+														data-category="45"
+														data-id_product="97"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-97"
+														>
+															<img
+																src="https://patchi.com/1178-home_default/gaite.jpg"
+																alt="Milk chocolate with two almonds delivery in lebanon"
+																data-full-size-image-url="https://patchi.com/1178-large_default/gaite.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Gaité"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-97"
+														>
+															Gaité
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>15
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with two almonds
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_97"
+																data-product-id="97"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-97"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1178-home_default/gaite.jpg"
+																				alt="Milk chocolate with two almonds delivery in lebanon"
+																				data-full-size-image-url="https://patchi.com/1178-large_default/gaite.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Gaité</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>Milk chocolate with two almonds</p>
+																			<br /><br />
+																			<p>
+																				Almonds and milk chocolate create a
+																				tasty Gaité combination when paired with
+																				coffee or tea.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-99"
+														data-category-all=" 42  44  49 "
+														data-category="44"
+														data-id_product="99"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-99"
+														>
+															<img
+																src="https://patchi.com/1194-home_default/merveille.jpg"
+																alt="Milk chocolate with milk chocolate cream and caramelized crispy crêpe delivery in lebanon"
+																data-full-size-image-url="https://patchi.com/1194-large_default/merveille.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Merveille"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-99"
+														>
+															Merveille
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>16
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with milk chocolate cream and
+															caramelized crispy crêpe
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_99"
+																data-product-id="99"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-99"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1194-home_default/merveille.jpg"
+																				alt="Milk chocolate with milk chocolate cream and caramelized crispy crêpe delivery in lebanon"
+																				data-full-size-image-url="https://patchi.com/1194-large_default/merveille.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Merveille</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with milk chocolate cream
+																				and caramelized crispy crêpe
+																			</p>
+																			<br /><br />
+																			<p>
+																				Enjoy a Merveille crispy delight of
+																				traditional crêpe and premium milk
+																				chocolate.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-104"
+														data-category-all=" 42  44  47  64 "
+														data-category="47"
+														data-id_product="104"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-104"
+														>
+															<img
+																src="https://patchi.com/1210-home_default/praline-lait.jpg"
+																alt="Milk chocolate with hazelnut praliné delivery in lebanon"
+																data-full-size-image-url="https://patchi.com/1210-large_default/praline-lait.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Praliné Lait"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-104"
+														>
+															Praliné Lait
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>13
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with hazelnut praliné
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_104"
+																data-product-id="104"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-104"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1210-home_default/praline-lait.jpg"
+																				alt="Milk chocolate with hazelnut praliné delivery in lebanon"
+																				data-full-size-image-url="https://patchi.com/1210-large_default/praline-lait.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Praliné Lait</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with hazelnut praliné
+																			</p>
+																			<br /><br />
+																			<p>
+																				A perfectly smooth and creamy texture, a
+																				silky milk chocolate taste and a smooth
+																				praliné centre.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-106"
+														data-category-all=" 42  44  45  48 "
+														data-category="48"
+														data-id_product="106"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-106"
+														>
+															<img
+																src="https://patchi.com/1182-home_default/capricio.jpg"
+																alt="Capricio"
+																data-full-size-image-url="https://patchi.com/1182-large_default/capricio.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Capricio"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-106"
+														>
+															Capricio
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>16
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with gianduja cream and pistachio
+															pieces
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_106"
+																data-product-id="106"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-106"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1182-home_default/capricio.jpg"
+																				alt="Capricio"
+																				data-full-size-image-url="https://patchi.com/1182-large_default/capricio.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Capricio</b>
+																				<br />
+																				<br />
+																				Milk chocolate with gianduja cream and
+																				pistachio pieces
+																				<br /><br />
+																				Guaranteed to please friends. A Capricio
+																				delightful combination of rich milk
+																				chocolate, gianduja cream and pistachio
+																				pieces.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-107"
+														data-category-all=" 42  44  49 "
+														data-category="49"
+														data-id_product="107"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-107"
+														>
+															<img
+																src="https://patchi.com/1175-home_default/biscuitine.jpg"
+																alt="Biscuitine"
+																data-full-size-image-url="https://patchi.com/1175-large_default/biscuitine.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Biscuitine"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-107"
+														>
+															Biscuitine
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>15
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with chocolate wafer
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_107"
+																data-product-id="107"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-107"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1175-home_default/biscuitine.jpg"
+																				alt="Biscuitine"
+																				data-full-size-image-url="https://patchi.com/1175-large_default/biscuitine.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Biscuitine</b>
+																				<br />
+																				<br />
+																				Milk chocolate with chocolate wafer
+																				<br /><br />
+																				For the one with a refined palate. Light
+																				crispy wafers enveloped with fine milk
+																				chocolate. Biscuitine!
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-108"
+														data-category-all=" 42  44  45 "
+														data-category="45"
+														data-id_product="108"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-108"
+														>
+															<img
+																src="https://patchi.com/1179-home_default/prestige.jpg"
+																alt="Milk chocolate with pistachio croquant delivery in lebanon"
+																data-full-size-image-url="https://patchi.com/1179-large_default/prestige.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Prestige"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-108"
+														>
+															Prestige
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>16
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with pistachio croquant
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_108"
+																data-product-id="108"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-108"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1179-home_default/prestige.jpg"
+																				alt="Milk chocolate with pistachio croquant delivery in lebanon"
+																				data-full-size-image-url="https://patchi.com/1179-large_default/prestige.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Prestige</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with pistachio croquant
+																			</p>
+																			<br /><br />
+																			<p>
+																				This croquant is a mix of roasted
+																				pistachios, crispy sugar covered with
+																				milk chocolate.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-109"
+														data-category-all=" 42  44  45 "
+														data-category="45"
+														data-id_product="109"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-109"
+														>
+															<img
+																src="https://patchi.com/1189-home_default/patchi-50.jpg"
+																alt="Milk Chocolate with dark gianduja cream and almond pieces delivery in Lebanon"
+																data-full-size-image-url="https://patchi.com/1189-large_default/patchi-50.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Patchi 50"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-109"
+														>
+															Patchi 50
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>17
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk Chocolate with dark gianduja cream and almond
+															pieces
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_109"
+																data-product-id="109"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-109"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1189-home_default/patchi-50.jpg"
+																				alt="Milk Chocolate with dark gianduja cream and almond pieces delivery in Lebanon"
+																				data-full-size-image-url="https://patchi.com/1189-large_default/patchi-50.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Patchi 50</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk Chocolate with dark gianduja cream
+																				and almond pieces
+																			</p>
+																			<br /><br />
+																			<p>
+																				A tasting Patchi 50 order that builds in
+																				flavor and intensity: Milk chocolate
+																				meets cocoa gianduja and almond crunchy
+																				pieces.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-110"
+														data-category-all=" 42  44  49  51 "
+														data-category="51"
+														data-id_product="110"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-110"
+														>
+															<img
+																src="https://patchi.com/1183-home_default/carmen.jpg"
+																alt="Milk chocolate with biscuit and caramel delivery in lebanon"
+																data-full-size-image-url="https://patchi.com/1183-large_default/carmen.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Carmen"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-110"
+														>
+															Carmen
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>16
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with biscuit and caramel
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_110"
+																data-product-id="110"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-110"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1183-home_default/carmen.jpg"
+																				alt="Milk chocolate with biscuit and caramel delivery in lebanon"
+																				data-full-size-image-url="https://patchi.com/1183-large_default/carmen.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Carmen</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with biscuit and caramel
+																			</p>
+																			<br /><br />
+																			<p>
+																				A typically perfect biscuit complete
+																				with smooth caramel all coated in rich
+																				milk chocolate.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-111"
+														data-category-all=" 42  44  46 "
+														data-category="46"
+														data-id_product="111"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-111"
+														>
+															<img
+																src="https://patchi.com/1216-home_default/tropical.jpg"
+																alt="Milk chocolate with mango cream delivery in lebanon"
+																data-full-size-image-url="https://patchi.com/1216-large_default/tropical.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Tropical"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-111"
+														>
+															Tropical
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>10
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with mango cream, mango flavor and
+															dried mango pieces
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_111"
+																data-product-id="111"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-111"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1216-home_default/tropical.jpg"
+																				alt="Milk chocolate with mango cream delivery in lebanon"
+																				data-full-size-image-url="https://patchi.com/1216-large_default/tropical.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Tropical</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with mango cream, mango
+																				flavor and dried mango pieces
+																			</p>
+																			<br /><br />
+																			<p>
+																				Milk Chocolate with mango cream, mango
+																				flavor and dried mango pieces
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-112"
+														data-category-all=" 42  43  51 "
+														data-category="43"
+														data-id_product="112"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-112"
+														>
+															<img
+																src="https://patchi.com/1169-home_default/parfait.jpg"
+																alt="Dark chocolate with dark ganache center delivery in lebanon"
+																data-full-size-image-url="https://patchi.com/1169-large_default/parfait.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Parfait"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-112"
+														>
+															Parfait
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>16
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Dark chocolate with dark ganache center
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_112"
+																data-product-id="112"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-112"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1169-home_default/parfait.jpg"
+																				alt="Dark chocolate with dark ganache center delivery in lebanon"
+																				data-full-size-image-url="https://patchi.com/1169-large_default/parfait.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Parfait</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Dark chocolate with dark ganache center
+																			</p>
+																			<br /><br />
+																			<p>
+																				A Parfait dark chocolate piece filled
+																				with a melt-in-your-mouth caramel
+																				centre.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-113"
+														data-category-all=" 42  44  45  48  64 "
+														data-category="44"
+														data-id_product="113"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-113"
+														>
+															<img
+																src="https://patchi.com/1215-home_default/amandine.jpg"
+																alt="Milk chocolate with gianduja cream and whole caramelized almond delivery in lebanon"
+																data-full-size-image-url="https://patchi.com/1215-large_default/amandine.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Amandine"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-113"
+														>
+															Amandine
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>16
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with gianduja cream and whole
+															caramelized almond
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_113"
+																data-product-id="113"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-113"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1215-home_default/amandine.jpg"
+																				alt="Milk chocolate with gianduja cream and whole caramelized almond delivery in lebanon"
+																				data-full-size-image-url="https://patchi.com/1215-large_default/amandine.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Amandine</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with gianduja cream and
+																				whole caramelized almond
+																			</p>
+																			<br /><br />
+																			<p>
+																				Discover pure milk chocolate bliss with
+																				the delicious milk and cocoa gianduja
+																				and almond filling of Amandine Milk.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-116"
+														data-category-all=" 42  44  46  49 "
+														data-category="49"
+														data-id_product="116"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-116"
+														>
+															<img
+																src="https://patchi.com/1205-home_default/raffine.jpg"
+																alt="Milk chocolate with yogurt cream, biscuit and strawberry jam piece delivery in lebanon"
+																data-full-size-image-url="https://patchi.com/1205-large_default/raffine.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Raffiné"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-116"
+														>
+															Raffiné
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>14
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with yogurt cream, biscuit and
+															strawberry jam
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_116"
+																data-product-id="116"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-116"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1205-home_default/raffine.jpg"
+																				alt="Milk chocolate with yogurt cream, biscuit and strawberry jam piece delivery in lebanon"
+																				data-full-size-image-url="https://patchi.com/1205-large_default/raffine.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Raffiné</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with yogurt cream,
+																				biscuit and strawberry jam
+																			</p>
+																			<br /><br />
+																			<p>
+																				Share the good taste with your loved
+																				ones with the luscious Raffiné milk
+																				chocolate filled with yogurt cream,
+																				biscuit and strawberry jam.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															primary_category_product
+														"
+														id="id_product-117"
+														data-category-all=" 42  44  51 "
+														data-category="51"
+														data-id_product="117"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-117"
+														>
+															<img
+																src="https://patchi.com/1170-home_default/canamella.jpg"
+																alt="Milk chocolate with salted caramel delivery in lebanon"
+																data-full-size-image-url="https://patchi.com/1170-large_default/canamella.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Canamella"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-117"
+														>
+															Canamella
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val">9 </span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with salted caramel
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_117"
+																data-product-id="117"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-117"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1170-home_default/canamella.jpg"
+																				alt="Milk chocolate with salted caramel delivery in lebanon"
+																				data-full-size-image-url="https://patchi.com/1170-large_default/canamella.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Canamella</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>Milk chocolate with salted caramel</p>
+																			<br /><br />
+																			<p>
+																				Add a unique flavor to your desserts
+																				table with Canamella, a perfect sweet
+																				and salty combination with Canamella, a
+																				milk chocolate and caramel piece.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-124"
+														data-category-all=" 182  184 "
+														data-category="182"
+														data-id_product="124"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-124"
+														>
+															<img
+																src="https://patchi.com/1174-home_default/finesse.jpg"
+																alt="Finesse"
+																data-full-size-image-url="https://patchi.com/1174-large_default/finesse.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Finesse"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-124"
+														>
+															Finesse
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>11
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Plain Milk chocolate
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_124"
+																data-product-id="124"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-124"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1174-home_default/finesse.jpg"
+																				alt="Finesse"
+																				data-full-size-image-url="https://patchi.com/1174-large_default/finesse.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Finesse</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>Plain Milk chocolate</p>
+																			<br /><br />
+																			<p>
+																				Our Finesse milk chocolate with nothing
+																				added is perfect to satisfy your
+																				chocolate craving.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-125"
+														data-category-all=" 182  183 "
+														data-category="182"
+														data-id_product="125"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-125"
+														>
+															<img
+																src="https://patchi.com/1185-home_default/noblesse.jpg"
+																alt="Noblesse"
+																data-full-size-image-url="https://patchi.com/1185-large_default/noblesse.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Noblesse"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-125"
+														>
+															Noblesse
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>12
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Plain Dark chocolate
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_125"
+																data-product-id="125"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-125"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1185-home_default/noblesse.jpg"
+																				alt="Noblesse"
+																				data-full-size-image-url="https://patchi.com/1185-large_default/noblesse.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Noblesse</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>Plain Dark chocolate</p>
+																			<br /><br />
+																			<p>
+																				Plain dark chocolate square that will
+																				positively affect your health. Simply a
+																				Noblesse!
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-126"
+														data-category-all=" 182  184  185 "
+														data-category="182"
+														data-id_product="126"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-126"
+														>
+															<img
+																src="https://patchi.com/1195-home_default/audace.jpg"
+																alt="Audace"
+																data-full-size-image-url="https://patchi.com/1195-large_default/audace.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Audace"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-126"
+														>
+															Audace
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>13
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with hazelnut pieces
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_126"
+																data-product-id="126"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-126"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1195-home_default/audace.jpg"
+																				alt="Audace"
+																				data-full-size-image-url="https://patchi.com/1195-large_default/audace.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Audace</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>Milk chocolate with hazelnut pieces</p>
+																			<br /><br />
+																			<p>
+																				Fresh and crunchy hazelnut pieces dipped
+																				in premium milk chocolate make an Audace
+																				treat.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-127"
+														data-category-all=" 182  184  185 "
+														data-category="182"
+														data-id_product="127"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-127"
+														>
+															<img
+																src="https://patchi.com/1199-home_default/legere.jpg"
+																alt="Légère"
+																data-full-size-image-url="https://patchi.com/1199-large_default/legere.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Légère"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-127"
+														>
+															Légère
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val">9 </span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with crisped rice and hazelnuts
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_127"
+																data-product-id="127"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-127"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1199-home_default/legere.jpg"
+																				alt="Légère"
+																				data-full-size-image-url="https://patchi.com/1199-large_default/legere.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Légère</b>
+																				<br />
+																				<br />
+																				Milk chocolate with crisped rice and
+																				hazelnuts
+																				<br /><br />
+																				Leaving you to savor the smooth
+																				combination of milk chocolate, rice
+																				crispy and hazelnuts combination in
+																				Légère piece.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-177"
+														data-category-all=" 182  190 "
+														data-category="182"
+														data-id_product="177"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-177"
+														>
+															<img
+																src="https://patchi.com/1190-home_default/pause-cafe.jpg"
+																alt="Pause Café"
+																data-full-size-image-url="https://patchi.com/1190-large_default/pause-cafe.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Pause Café"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-177"
+														>
+															Pause Café
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>10
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk Chocolate with coffee gianduja
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_177"
+																data-product-id="177"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-177"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1190-home_default/pause-cafe.jpg"
+																				alt="Pause Café"
+																				data-full-size-image-url="https://patchi.com/1190-large_default/pause-cafe.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Pause Café</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>Milk Chocolate with coffee gianduja</p>
+																			<br /><br />
+																			<p>
+																				The Pause Café milk chocolate is
+																				guaranteed to impress them with the
+																				aromatic coffee Gianduja filling.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-128"
+														data-category-all=" 182  184  185  186 "
+														data-category="182"
+														data-id_product="128"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-128"
+														>
+															<img
+																src="https://patchi.com/1181-home_default/perfetto.jpg"
+																alt="Perfetto"
+																data-full-size-image-url="https://patchi.com/1181-large_default/perfetto.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Perfetto"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-128"
+														>
+															Perfetto
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>10
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with raisins, orange peel and
+															hazelnut pieces
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_128"
+																data-product-id="128"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-128"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1181-home_default/perfetto.jpg"
+																				alt="Perfetto"
+																				data-full-size-image-url="https://patchi.com/1181-large_default/perfetto.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Perfetto</b>
+																				<br />
+																				<br />
+																				Milk chocolate with raisins, orange peel
+																				and hazelnut pieces
+																				<br /><br />
+																				Our indulgent Perfetto chocolate nut mix
+																				is a perfect blend of crispy hazelnuts,
+																				tasty orange pieces and chocolate
+																				covered raisins.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-129"
+														data-category-all=" 182  184  185  188 "
+														data-category="182"
+														data-id_product="129"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-129"
+														>
+															<img
+																src="https://patchi.com/1193-home_default/coffret.jpg"
+																alt="Coffret"
+																data-full-size-image-url="https://patchi.com/1193-large_default/coffret.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Coffret"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-129"
+														>
+															Coffret
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>14
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with gianduja cream
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_129"
+																data-product-id="129"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-129"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1193-home_default/coffret.jpg"
+																				alt="Coffret"
+																				data-full-size-image-url="https://patchi.com/1193-large_default/coffret.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Coffret</b>
+																				<br />
+																				<br />
+																				Milk chocolate with gianduja cream
+																				<br /><br />
+																				Enjoy an intense Coffret flavor
+																				experience of premium milk chocolate and
+																				gianduja cream.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-130"
+														data-category-all=" 64  182  184  185 "
+														data-category="64"
+														data-id_product="130"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-130"
+														>
+															<img
+																src="https://patchi.com/1663-home_default/casablanca.jpg"
+																alt="Casablanca"
+																data-full-size-image-url="https://patchi.com/1663-large_default/casablanca.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Casablanca"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-130"
+														>
+															Casablanca
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>11
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with gianduja cream, hazelnut
+															pieces, orange flavor and...
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_130"
+																data-product-id="130"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-130"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1663-home_default/casablanca.jpg"
+																				alt="Casablanca"
+																				data-full-size-image-url="https://patchi.com/1663-large_default/casablanca.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Casablanca</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with gianduja cream,
+																				hazelnut pieces, orange flavor and
+																				orange peel
+																			</p>
+																			<br /><br />
+																			<p>
+																				A unique taste of tangy orange peels
+																				coated in creamy milk chocolate with
+																				gianduja and hazelnut pieces.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-131"
+														data-category-all=" 182  183  185  188 "
+														data-category="182"
+														data-id_product="131"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-131"
+														>
+															<img
+																src="https://patchi.com/1191-home_default/marquise.jpg"
+																alt="Marquise Noir"
+																data-full-size-image-url="https://patchi.com/1191-large_default/marquise.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Marquise Noir"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-131"
+														>
+															Marquise Noir
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>10
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Dark chocolate with gianduja cream, almond,
+															hazelnut pieces and crisped rice
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_131"
+																data-product-id="131"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-131"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1191-home_default/marquise.jpg"
+																				alt="Marquise Noir"
+																				data-full-size-image-url="https://patchi.com/1191-large_default/marquise.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Marquise Noir</b>
+																				<br />
+																				<br />
+																				Dark chocolate with gianduja cream,
+																				almond, hazelnut pieces and crisped rice
+																				<br /><br />
+																				A Marquise flavor based on the top
+																				gourmet trends. A mix dark chocolate,
+																				hazelnuts, almonds and rice crispies.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-132"
+														data-category-all=" 182  184  190 "
+														data-category="182"
+														data-id_product="132"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-132"
+														>
+															<img
+																src="https://patchi.com/1186-home_default/arabica.jpg"
+																alt="Arabica"
+																data-full-size-image-url="https://patchi.com/1186-large_default/arabica.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Arabica"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-132"
+														>
+															Arabica
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val">9 </span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with two coffee beans
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_132"
+																data-product-id="132"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-132"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1186-home_default/arabica.jpg"
+																				alt="Arabica"
+																				data-full-size-image-url="https://patchi.com/1186-large_default/arabica.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Arabica</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with two coffee beans
+																			</p>
+																			<br /><br />
+																			<p>
+																				A rarety in the coffee lovers world. Our
+																				premium milk chocolate coating two
+																				coffee beans for an intense taste.
+																				Arabica!
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-133"
+														data-category-all=" 182  185 "
+														data-category="182"
+														data-id_product="133"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-133"
+														>
+															<img
+																src="https://patchi.com/1214-home_default/harmonie.jpg"
+																alt="Harmonie"
+																data-full-size-image-url="https://patchi.com/1214-large_default/harmonie.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Harmonie"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-133"
+														>
+															Harmonie
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val">9 </span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															White chocolate with hazelnuts and rice
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_133"
+																data-product-id="133"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-133"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1214-home_default/harmonie.jpg"
+																				alt="Harmonie"
+																				data-full-size-image-url="https://patchi.com/1214-large_default/harmonie.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Harmonie</b>
+																				<br />
+																				<br />
+																				White chocolate with hazelnuts and rice
+																				<br /><br />
+																				The perfect Harmonie of two sensations.
+																				The crunchiness of nuts and the
+																				smoothness of white chocolate.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-134"
+														data-category-all=" 64  182  184  185 "
+														data-category="64"
+														data-id_product="134"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-134"
+														>
+															<img
+																src="https://patchi.com/1207-home_default/croquet.jpg"
+																alt="Croquet"
+																data-full-size-image-url="https://patchi.com/1207-large_default/croquet.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Croquet"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-134"
+														>
+															Croquet
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>11
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Milk chocolate with chocolate cream, hazelnuts,
+															almonds and crisped rice
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_134"
+																data-product-id="134"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-134"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1207-home_default/croquet.jpg"
+																				alt="Croquet"
+																				data-full-size-image-url="https://patchi.com/1207-large_default/croquet.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Croquet</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Milk chocolate with chocolate cream,
+																				hazelnuts, almonds and crisped rice
+																			</p>
+																			<br /><br />
+																			<p>
+																				It is simply wonderful. a milky
+																				chocolate square full of tiny little
+																				bits of rice crispy, hazelnuts, almonds
+																				and chocolate cream.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-135"
+														data-category-all=" 182  183 "
+														data-category="182"
+														data-id_product="135"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-135"
+														>
+															<img
+																src="https://patchi.com/1184-home_default/delice.jpg"
+																alt="Délice"
+																data-full-size-image-url="https://patchi.com/1184-large_default/delice.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Délice"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-135"
+														>
+															Délice
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>11
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Dark chocolate with dark chocolate cream
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_135"
+																data-product-id="135"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-135"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1184-home_default/delice.jpg"
+																				alt="Délice"
+																				data-full-size-image-url="https://patchi.com/1184-large_default/delice.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Délice</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Dark chocolate with dark chocolate cream
+																			</p>
+																			<br /><br />
+																			<p>
+																				A Délice taste of pure dark chocolate.
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-136"
+														data-category-all=" 182  183  186 "
+														data-category="182"
+														data-id_product="136"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-136"
+														>
+															<img
+																src="https://patchi.com/1168-home_default/nuance.jpg"
+																alt="Nuance"
+																data-full-size-image-url="https://patchi.com/1168-large_default/nuance.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Nuance"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-136"
+														>
+															Nuance
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>11
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Dark chocolate with chocolate cream and orange
+															peel
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_136"
+																data-product-id="136"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-136"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1168-home_default/nuance.jpg"
+																				alt="Nuance"
+																				data-full-size-image-url="https://patchi.com/1168-large_default/nuance.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Nuance</b>
+																				<br />
+																				<br />
+																			</p>
+																			<p>
+																				Dark chocolate with chocolate cream and
+																				orange peel
+																			</p>
+																			<br /><br />
+																			<p>
+																				The crispy bits of tangy orange peel
+																				dipped in smooth dark chocolate...What a
+																				Nuance!
+																			</p>
+																			<p></p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-102"
+														data-category-all=" 182  183  186 "
+														data-category="182"
+														data-id_product="102"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-102"
+														>
+															<img
+																src="https://patchi.com/1172-home_default/plaisir.jpg"
+																alt="Plaisir"
+																data-full-size-image-url="https://patchi.com/1172-large_default/plaisir.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Plaisir"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-102"
+														>
+															Plaisir
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>10
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Dark chocolate with orange pieces
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_102"
+																data-product-id="102"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-102"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1172-home_default/plaisir.jpg"
+																				alt="Plaisir"
+																				data-full-size-image-url="https://patchi.com/1172-large_default/plaisir.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Plaisir</b>
+																				<br />
+																				<br />
+																				Dark chocolate with orange pieces
+																				<br /><br />
+																				A Plaisir for yourself. Dark chocolate
+																				with a hint of orange pieces.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div
+														class="
+															box-product__item
+															col-md-4 col-xs-6
+															secondary_category_product
+														"
+														id="id_product-103"
+														data-category-all=" 182  183  186 "
+														data-category="182"
+														data-id_product="103"
+													>
+														<div
+															class="img-container"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-103"
+														>
+															<img
+																src="https://patchi.com/1211-home_default/passion.jpg"
+																alt="Passion"
+																data-full-size-image-url="https://patchi.com/1211-large_default/passion.jpg"
+															/>
+														</div>
+														<h4
+															class="box-product__name center"
+															data-name="Passion"
+															data-toggle="modal"
+															data-target="#whatsinside-modal-103"
+														>
+															Passion
+															<div
+																class="box-product__weight center"
+																style="display: inline"
+															>
+																(<span class="box-product__weight-val"
+																	>10
+																</span>
+																gr)
+															</div>
+														</h4>
+														<p class="box-product__desc">
+															Dark chocolate with strawberry pieces
+														</p>
+
+														<div class="input-group bootstrap-touchspin">
+															<span class="text">QTY</span>
+															<input
+																type="text"
+																name="box_qty"
+																id="box_quantity_wanted_103"
+																data-product-id="103"
+																value="0"
+																class="input-group form-control box-qty"
+																min="0"
+																aria-label="Quantity"
+																disabled-=""
+															/>
+															<span class="input-group-btn-vertical">
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-up
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-up"></i>
+																</button>
+																<button
+																	class="
+																		btn btn-touchspin btn-box
+																		js-touchspin
+																		bootstrap-touchspin-down
+																	"
+																	type="button"
+																>
+																	<i class="material-icons touchspin-down"></i>
+																</button>
+															</span>
+														</div>
+													</div>
+													<!-- Modal -->
+													<div
+														id="whatsinside-modal-103"
+														class="modal fade"
+														role="dialog"
+													>
+														<div class="modal-dialog">
+															<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button
+																		type="button"
+																		class="close"
+																		data-dismiss="modal"
+																	>
+																		×
+																	</button>
+																	<h4 class="modal-title"></h4>
+																</div>
+
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img
+																				src="https://patchi.com/1211-home_default/passion.jpg"
+																				alt="Passion"
+																				data-full-size-image-url="https://patchi.com/1211-large_default/passion.jpg"
+																			/>
+																		</div>
+																		<div class="col-md-6">
+																			<p>
+																				<b>Passion</b>
+																				<br />
+																				<br />
+																				Dark chocolate with strawberry pieces
+																				<br /><br />
+																				A true Passion of delectable chocolate
+																				filled with dried strawberries.
+																			</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="modal-footer">
+																	<button
+																		type="button"
+																		class="btn btn-default"
+																		data-dismiss="modal"
+																	>
+																		Close
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</main>
+									</div>
+								</div>
+								<div id="confirmation" class="box__panel">
+									<div class="box-row">
+										<p class="tab__desc full">
+											Your box has been successfully added to your cart.
+										</p>
+										<div class="full btn-container">
+											<a href="https://patchi.com/" class="btn btn-secondary"
+												>Continue Shopping</a
+											>
+											<a
+												href="https://patchi.com/buildyourownbox"
+												class="btn btn-primary"
+												>Customize Another Box</a
+											>
+											<a
+												href="https://patchi.com/cart"
+												class="btn btn-secondary"
+												>Proceed to checkout</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div
+								id="byb-modal"
+								class="modal fade in"
+								tabindex="-1"
+								role="dialog"
+								aria-labelledby="BybModalLabel"
+							>
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button
+												type="button"
+												class="close"
+												data-dismiss="modal"
+												aria-label="Close"
+											>
+												<span aria-hidden="true">×</span>
+											</button>
+											<div class="modal-msg">
+												<div class="byb-msg">
+													Are you sure you want to delete this item?
+												</div>
+											</div>
+										</div>
+										<div class="modal-body"></div>
+										<div class="modal-footer">
+											<a class="btn btn-secondary" data-dismiss="modal"
+												>Cancel</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<footer class="page-footer">
+							<!-- Footer content -->
+						</footer>
+					</section>
+				</div>
+			</div>
+		</section>
+		<!-- Product Shop Section End -->
+
+		<!-- Partner Logo Section Begin -->
+		<div class="partner-logo">
+			<div class="container">
+				<div class="logo-carousel owl-carousel">
+					<div class="logo-item">
+						<div class="tablecell-inner">
+							<img src="img/logo-carousel/logo-1.png" alt="" />
+						</div>
+					</div>
+					<div class="logo-item">
+						<div class="tablecell-inner">
+							<img src="img/logo-carousel/logo-2.png" alt="" />
+						</div>
+					</div>
+					<div class="logo-item">
+						<div class="tablecell-inner">
+							<img src="img/logo-carousel/logo-3.png" alt="" />
+						</div>
+					</div>
+					<div class="logo-item">
+						<div class="tablecell-inner">
+							<img src="img/logo-carousel/logo-4.png" alt="" />
+						</div>
+					</div>
+					<div class="logo-item">
+						<div class="tablecell-inner">
+							<img src="img/logo-carousel/logo-5.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Partner Logo Section End -->
+
+		<!-- Footer Section Begin -->
+		<footer class="footer-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="footer-left">
+							<div class="footer-logo">
+								<a href="#"><img src="img/footer-logo.png" alt="" /></a>
+							</div>
+							<ul>
+								<li>Address: 60-49 Road 11378 New York</li>
+								<li>Phone: +65 11.188.888</li>
+								<li>Email: hello.colorlib@gmail.com</li>
+							</ul>
+							<div class="footer-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 offset-lg-1">
+						<div class="footer-widget">
+							<h5>Information</h5>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Checkout</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Serivius</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="footer-widget">
+							<h5>My Account</h5>
+							<ul>
+								<li><a href="#">My Account</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Shopping Cart</a></li>
+								<li><a href="#">Shop</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="newslatter-item">
+							<h5>Join Our Newsletter Now</h5>
+							<p>
+								Get E-mail updates about our latest shop and special offers.
+							</p>
+							<form action="#" class="subscribe-form">
+								<input type="text" placeholder="Enter Your Mail" />
+								<button type="button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-reserved">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="copyright-text">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+								<script>
+									document.write(new Date().getFullYear());
+								</script>
+								All rights reserved | This template is made with
+								<i class="fa fa-heart-o" aria-hidden="true"></i> by
+								<a href="https://colorlib.com" target="_blank">Colorlib</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</div>
+							<div class="payment-pic">
+								<img src="img/payment-method.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer Section End -->
+
+		<!-- Js Plugins -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/jquery.dd.min.js"></script>
+		<script src="js/jquery.slicknav.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
