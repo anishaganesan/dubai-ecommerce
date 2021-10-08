@@ -32,6 +32,16 @@ router.get('/checkout', function (req, res, next) {
 router.get('/fillbox', function (req, res, next) {
 	res.render('fillbox', { title: 'Express' });
 });
+router.get('/cake', function (req, res, next) {
+	res.render('cake', { title: 'Express' });
+});
+router.get('/flower', function (req, res, next) {
+	res.render('flower', { title: 'Express' });
+});
+router.get('/greetings', function (req, res, next) {
+	res.render('greetings', { title: 'Express' });
+});
+
 
 router.post('/contactus', async (req, res, next) => {
 	console.log('route called');
